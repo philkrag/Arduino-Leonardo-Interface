@@ -84,14 +84,14 @@ CPU_Cycle = CPU_Cycle + 1;
 
 Send_Serial_Flag = false;
 
-//Input_1_Value = digitalRead(2);
+Input_1_Value = digitalRead(2);
 Input_2_Value = digitalRead(3);
 Input_3_Value = digitalRead(4);
 Input_4_Value = digitalRead(5);
 Input_5_Value = digitalRead(6);
 Input_6_Value = digitalRead(7);
 
-if(CPU_Cycle==10){Input_1_Value = Input_1_Value+1;}
+//if(CPU_Cycle==10){Input_1_Value = Input_1_Value+1;}
 
 if(Input_1_MValue!=Input_1_Value){ Send_Serial_Flag = true; Input_1_MValue = Input_1_Value; }
 if(Input_2_MValue!=Input_2_Value){ Send_Serial_Flag = true; Input_2_MValue = Input_1_Value; }
